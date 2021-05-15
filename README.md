@@ -1,3 +1,3 @@
 # miljø
 
-rust, hyper, prisma, graphql, angular
+rust, warp, prisma, graphql, angular
