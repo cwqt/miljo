@@ -1,3 +1,3 @@
 # miljø
 
-node, prisma, graphql, angular
+purescript, prisma, graphql, angular
