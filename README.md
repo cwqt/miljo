@@ -1,3 +1,3 @@
 # miljø
 
-purescript, prisma, graphql, angular
+rust, hyper, prisma, graphql, angular
