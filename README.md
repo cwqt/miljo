@@ -2,9 +2,11 @@
 
 [mcn](https://gitlab.com/cxss/mcn) but better in every way.
 
+restriction inspires creativity, so here's laundry list of things i want:
+
+* go cli interface with charm.sh
 * serverless event-driven typescript with prisma & graphql
-* gateway nodes in rust & rabbitmq
-* svelte frontend
+* gateway nodes in go & rabbitmq
 
 inversion of control for commanding devices
 
