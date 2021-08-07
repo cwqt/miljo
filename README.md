@@ -2,9 +2,9 @@
 
 [mcn](https://gitlab.com/cxss/mcn) but better in every way.
 
-restriction inspires creativity, so here's laundry list of things i want:
+here's laundry list of things i want:
 
-* go cli interface with charm.sh via rust ffi
+* go cli interface using charm.sh via rust ffi
 * gateway node in ts with prisma & graphql
 * edge nodes in rust using rpi pico
 
