@@ -1,0 +1,22 @@
+{
+  "name": "gateway",
+  "version": "1.0.0",
+  "description": "miljø serverless gateway",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://gitlab.com/cxss/miljo.git"
+  },
+  "author": "cxss",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://gitlab.com/cxss/miljo/issues"
+  },
+  "homepage": "https://gitlab.com/cxss/miljo#readme",
+  "dependencies": {
+    "faunadb": "^4.3.0"
+  }
+}
