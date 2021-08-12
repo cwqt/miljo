@@ -2,6 +2,12 @@
 
 [mcn](https://gitlab.com/cxss/mcn) but better
 
+
+* __gateway__: API / storage (TS, FQL)
+* __cli__: User interface (Go)
+* __edge__: Hardware code (Rust)
+
+
 here's laundry list of things i want:
 
 * go cli interface using bubbletea & lipgloss
