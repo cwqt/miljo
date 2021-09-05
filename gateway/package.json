@@ -1,22 +1,20 @@
 {
   "name": "gateway",
-  "version": "1.0.0",
-  "description": "miljø serverless gateway",
-  "main": "index.js",
+  "version": "0.1.0",
+  "private": true,
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "sst test",
+    "start": "sst start",
+    "build": "sst build",
+    "deploy": "sst deploy",
+    "remove": "sst remove"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://gitlab.com/cxss/miljo.git"
+  "devDependencies": {
+    "@aws-cdk/assert": "1.111.0"
   },
-  "author": "cxss",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://gitlab.com/cxss/miljo/issues"
-  },
-  "homepage": "https://gitlab.com/cxss/miljo#readme",
   "dependencies": {
-    "faunadb": "^4.3.0"
+    "@serverless-stack/cli": "0.38.0",
+    "@serverless-stack/resources": "0.38.0",
+    "@aws-cdk/core": "1.111.0"
   }
 }
