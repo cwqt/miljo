@@ -1,8 +1,8 @@
 # serverless
 
-The goal with this is to go fully serverless, managing infra sucks (though terraform makes this less sucky)
+taking some inspo from my current place of work, make everything using the serverless special sauce
 
-The whole cloud part will be TypeScript (just because I can knock this out super fast) [sst](https://docs.serverless-stack.com/) deployed via [seed.run](https://seed.run/) using [FaunaDB](https://fauna.com/) as the general data store, with measurement data being stored in [TimeStream](https://aws.amazon.com/timestream/)
+the whole cloud part will be TypeScript (just because I can knock this out super fast), [sst](https://docs.serverless-stack.com/) deployed via [seed.run](https://seed.run/) using [PlanetScale](https://planetscale.com/) as the general data store with [Prisma](https://www.prisma.io/), measurement data being stored in [TimeStream](https://aws.amazon.com/timestream/), EDA via [EventBridge](https://aws.amazon.com/eventbridge/)
 
 ![stack](https://ftp.cass.si/19~26kM56.png)
 
@@ -26,11 +26,11 @@ controlling data flow + utilities for visualising data
 ## device management
 
 - node (things that can have signals scoped on them & optionally behaviours)
-  - schemas (what the node can actually do, see actuators)
+  - template (what the node can actually do, see actuators)
 - transducer (converts energy from one form to another, e.g. electrical to light or vice versa)
   - sensors (things that ingest signals)
   - actuators (things that output signals)
-    - sensors & actuators attachable to schemas
+    - sensors & actuators attachable to templates
 
 transmitting data
 
@@ -146,9 +146,11 @@ lets go with a simple example, toggling a pin between a high or low state
 
 - no more rest please
 
+![uml](https://ftp.cass.si/634Ne=8g1.png)
+
+
 ## timeseries data
 
-- ingress: aws kinesis
 - storage: aws timestream, serverless
 
 ## hardware
